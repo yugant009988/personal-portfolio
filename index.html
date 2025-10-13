@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/631a5e7f96.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="/images/Yugant_Yadav__1_-removebg-preview.png" alt="logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Frontend Devloper</p>
+            
+            <h1>Hi, I'm <span>Yugant</span> Yadav <br> From India</h1>
+        </div>
+    </div>
+   </div>
+
+   <!-- about -->
+   
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/images/my image.jpeg" alt="user">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I have been coding for the past year, learning through hands-on projects and online resources. I have gained skills in programming, problem-solving, and web development, and I enjoy building projects that challenge me and help me grow as a developer.</p>
+
+                  <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Frontend Devloper</span><br> Designing Web/App interfaces</li>
+
+                        <li><span>App Development</span></span><br>Building Android/ios apps</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>self maid projects</span></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+  <!-- Services -->
+
+  <div id="services">
+    <div class="container">
+         <h1 class="sub-title">My Services</h1>
+         <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Frontend Development</h2>
+                <p>Frontend development focuses on creating the visual and interactive parts of a website that users see and engage with. It involves using HTML, CSS, and JavaScript to build responsive, user-friendly interfaces.</p>
+                <a href="">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-marker"></i>
+                <h2>web design</h2>
+                <p>Web design is the process of creating the layout, look, and feel of a website to ensure it’s visually appealing and easy to use. It combines creativity with user experience principles to design attractive and functional web pages.</p>
+                <a href="">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Development</h2>
+                <p>App development involves designing and building software applications for mobile or desktop platforms. It focuses on creating user-friendly, high-performing apps that solve real-world problems and deliver seamless experiences.</p>
+                <a href="">Learn more</a>
+            </div>
+         </div>
+    </div>
+  </div>
+
+  <!-- Portfolio -->
+     <div id="portfolio">
+        <div class="container">
+            <div class="sub-titel">
+                <h1>My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                      <img src="/images/work1.jpg" alt="cafe website">  
+                      <div class="layer">
+                        <h3>Cafe Black been</h3>
+                        <p>Cafe Black Bean is a modern café website showcasing menus, ambiance, and online ordering options. It’s designed with a clean, inviting interface to give users a real café experience online.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                      </div>
+                    </div>
+
+                     <div class="work">
+                      <img src="/images/work2.jpg" alt="todo website"> 
+                      <div class="layer">
+                        <h3>ToDo List</h3>
+                        <p>The ToDo List app helps users organize daily tasks efficiently with a simple and responsive interface. It’s built to boost productivity through easy task management and tracking.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                      </div> 
+                    </div>
+
+                     <div class="work">
+                      <img src="/images/work3.jpg" alt="ecommers website"> 
+                       <div class="layer">
+                            <h3>Apix Goods</h3>
+                            <p>Apix Goods is an eCommerce website designed for smooth online shopping and product management. It offers a user-friendly experience with modern design and smart functionality.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+     </div>
+
+
+  <!-- contact -->
+
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p> <i class="fa-solid fa-phone-volume"></i> 9999999999</p>
+                <div class="social-icons">
+                    <a href="#"><i class=" fab fa-facebook"></i></a>
+                    <a href="#"><i class=" fab fa-instagram"></i></a>
+                    <a href="#"><i class=" fab fa-linkedin"></i></a>
+                </div>
+                <a href="/images/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="massage" rows="6" placeholder="Your massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>© 2025 Portfolio. Made with ❤️ by Yugant Yadav </p>
+    </div>
+  </div>
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab (tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+         for( tabcontent of  tabcontents){
+             tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+     
+
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+ </script>
+
+   <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbySU326cxNmnJccUAV04z3CJrqXvq44QaoX1zBk9iUGH_TqvtAtkerBnOyXtfbw-HJ0MQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
